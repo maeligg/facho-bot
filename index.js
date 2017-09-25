@@ -4,9 +4,13 @@ const config = require('./config.js');
 process.env = config;
 
 // Words arrays
-const interjection = ['Une honte !', 'Honte à vous !', 'Dégueulasse', 'J\'ai honte d\'être Français.']
+const interjection = ['Une honte !', 'Honteux', 'Honte à vous !', 'Dégueulasse', 'J\'ai honte d\'être Français.', 'N\'importe quoi.', 'La Nation mérite mieux.', 'De Gaule n\'aurait jamais accepté ça.'];
 
-const noms = ['des journalopes', 'des socialopes', 'de la gauchiasse', 'de la voyoucratie', 'des merdias', 'des bobos', 'des socialopes', 'des feminazis', 'des cosmopolites', 'des droit de l\'hommistes', 'de l\'UMPS', 'des bobos'];
+const noms = ['des journalopes', 'des journaputes', 'des socialopes', 'des gauchiasses', 'des représentants de la voyoucratie', 'des merdias', 'des bobos', 'des feminazis', 'des cosmopolites', 'des droit de l\'hommistes', 'des membres de l\'UMPS', 'des bobos', 'des islamo-gauchistes', 'des illuminatis', 'des sionistes'];
+
+const débutPhrase = ['Encore un coup', 'Bel example', 'Triste example'];
+
+const finPhrase = ['dirigent ce pays', 'contrôlent les médias', 'contrôlent nos esprits'];
 
 // Utils
 const randomItem = array => array[Math.floor(Math.random() * array.length)];
@@ -24,7 +28,7 @@ const T = new Twit({
 // Build and post the tweet
 const tweet = () => {
   // Build the tweet
-  const tweetContent = `${randomItem(interjection)} Encore un coup ${randomItem(noms)} qui dirige ce pays.`
+  const tweetContent = `${randomItem(interjection)} ${randomItem(débutPhrase)} ${randomItem(noms)} qui ${randomItem(finPhrase)}.`;
 
   T.post('statuses/update', { status: tweetContent }, (err, data, resp) => {
     if (err) {
