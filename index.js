@@ -5,7 +5,7 @@ const Twit = require('twit');
 
 
 // Words arrays
-const noms = ['journalopes', 'journaputes', 'socialopes', 'gauchiasses', 'voyoucrates', 'merdias', 'feminazis', 'islamo-gauchistes', 'illuminatis',  'lobbies', 'franc-maçons', 'euro-atlantistes', 'droitards', 'bien pensants', 'yankees', 'idiots utiles', 'oligarques', 'élites décadentes', 'bureaucrates', 'banksters'];
+const noms = ['journalopes', 'journaputes', 'socialopes', 'gauchiasses', 'voyoucrates', 'merdias', 'feminazis', 'islamo-gauchistes', 'illuminatis', 'lobbies', 'franc-maçons', 'euro-atlantistes', 'droitards', 'bien pensants', 'yankees', 'idiots utiles', 'oligarques', 'élites décadentes', 'bureaucrates', 'banksters'];
 
 const adjectifs = ['cosmopolites', 'bobos', 'droit de l\'hommistes', 'propagandistes', 'antiracistes', 'sionistes', 'adeptes du politiquement correct', 'libre-échangistes', 'capitalistes', 'mondialistes', 'communautaristes', 'impérialistes', 'immigrationnistes', 'satanistes'];
 
@@ -43,8 +43,8 @@ const tweet = () => {
       ' qui '
       + randomItem(phraseFin)
       : ' ' + randomItem(adjectifs))
-      + '.'
-      + (coinFlip() === 0 ? ' ' + randomItem(interjectionFin) : '');
+      + '. '
+      + randomItem(interjectionFin);
 
   T.get('search/tweets', { q: `list:facho_bot/merdias since:${date}`, count: 10 }, (getErr, getData) => {
     const randomTweet = randomItem(getData.statuses);
