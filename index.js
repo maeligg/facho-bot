@@ -5,9 +5,9 @@ const Twit = require('twit');
 
 
 // Words arrays
-const noms = ['journalopes', 'journaputes', 'socialopes', 'gauchiasses', 'voyoucrates', 'merdias', 'feminazis', 'islamo-gauchistes', 'illuminatis', 'sionistes', 'lobbies', 'franc-maçons', 'euro-atlantistes', 'yankees', 'idiots utiles', 'oligarques', 'élites', 'propagandistes', 'antiracistes', 'bureaucrates', 'banksters', 'satanistes'];
+const noms = ['journalopes', 'journaputes', 'socialopes', 'gauchiasses', 'voyoucrates', 'merdias', 'feminazis', 'islamo-gauchistes', 'illuminatis',  'lobbies', 'franc-maçons', 'euro-atlantistes', 'droitards', 'bien pensants', 'yankees', 'idiots utiles', 'oligarques', 'élites décadentes', 'bureaucrates', 'banksters'];
 
-const adjectifs = ['cosmopolites', 'bobos', 'droit de l\'hommistes', 'bien pensants', 'politiquement corrects', 'libre-échangistes', 'décadents', 'capitalistes', 'déracinés', 'mondialistes', 'communautaristes', 'impérialistes', 'immigrationnistes', 'droitards'];
+const adjectifs = ['cosmopolites', 'bobos', 'droit de l\'hommistes', 'propagandistes', 'antiracistes', 'sionistes', 'adeptes du politiquement correct', 'libre-échangistes', 'capitalistes', 'mondialistes', 'communautaristes', 'impérialistes', 'immigrationnistes', 'satanistes'];
 
 const phraseDébut = ['Encore un coup', 'Encore un example', 'Triste example', 'C\'est la faute', 'Il serait temps de se débarasser', 'Vous êtes à la solde', 'Vous faites le jeu', 'Tout ça à cause', 'Toujours pas débarrassés', 'Marre', 'On n\'en peut plus', 'Ras-le-bol', 'Ras la casquette', 'Y\'en a assez'];
 
