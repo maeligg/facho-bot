@@ -1,7 +1,7 @@
 const Twit = require('twit');
-const config = require('./config.js');
-
-process.env = config;
+// Uncomment these lines if running locally (see readme for more details)
+// const config = require('./config.js');
+// process.env = config;
 
 
 // Words arrays
