@@ -51,7 +51,7 @@ const tweet = () => {
     const tweetId = randomTweet.id_str;
     const username = randomTweet.user.screen_name;
 
-    T.post('statuses/update', { status: `@${username} ${tweetContent}`, in_reply_to_status_id: tweetId }, (postErr, postData) => {
+    T.post('statuses/update', { status: `.@${username} ${tweetContent}`, in_reply_to_status_id: tweetId }, (postErr, postData) => {
       if (postErr) {
         console.log('error: ', postErr);
       } else {
