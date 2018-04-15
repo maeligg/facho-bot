@@ -9,7 +9,7 @@ const noms = ['journalopes', 'journaputes', 'socialopes', 'gauchiasses', 'voyouc
 
 const adjectifs = ['cosmopolites', 'bobos', 'droit de l\'hommistes', 'propagandistes', 'antiracistes', 'sionistes', 'adeptes du politiquement correct', 'libre-échangistes', 'capitalistes', 'mondialistes', 'communautaristes', 'impérialistes', 'immigrationnistes', 'satanistes', 'apatrides', 'fratricides', 'untermensche'];
 
-const phraseDébut = ['Encore un coup', 'Encore un example', 'Triste example', 'C\'est la faute', 'Il serait temps de se débarasser', 'Vous êtes à la solde', 'Vous faites le jeu', 'Tout ça à cause', 'Toujours pas débarrassés', 'Marre', 'On n\'en peut plus', 'Ras-le-bol', 'Ras la casquette', 'Y\'en a assez'];
+const phraseDébut = ['Encore un coup', 'Encore un exemple', 'Triste exemple', 'C\'est la faute', 'Il serait temps de se débarasser', 'Vous êtes à la solde', 'Vous faites le jeu', 'Tout ça à cause', 'Toujours pas débarrassés', 'Marre', 'On n\'en peut plus', 'Ras-le-bol', 'Ras la casquette', 'Y\'en a assez'];
 
 const phraseFin = ['dirigent ce pays', 'contrôlent les médias', 'contrôlent la presse', 'contrôlent le système', 's\'autorisent tout', 'détruisent la tradition française', 'perpétuent la théorie du genre', 'anéantissent l\'identité française', 'veulent gouverner par le chaos', 'diabolisent les identitaires', 'veulent mettre en place un gouvernement mondial', 'tirent les ficelles', 'érigent des minarets', 'vendent leur patrie', 'vous espionnent impunément'];
 
